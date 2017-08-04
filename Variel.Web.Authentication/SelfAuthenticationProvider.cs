@@ -6,7 +6,7 @@ using Variel.Web.Common;
 
 namespace Variel.Web.Authentication
 {
-    public class SelfAuthenticationProvider<TAccount> : AuthenticationProvider<TAccount> where TAccount : Account
+    public class SelfAuthenticationProvider<TAccount> : AuthenticationProvider<TAccount> where TAccount : class, IAccount
     {
         public SelfAuthenticationProvider(AuthenticationDatabaseContext<TAccount> database)
             : base(database) { }

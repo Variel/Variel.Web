@@ -8,7 +8,7 @@ using Variel.Web.Common;
 
 namespace Variel.Web.Authentication
 {
-    public class AuthenticationDatabaseContext<TAccount> : DbContext, IAccountDatabaseContext<TAccount> where TAccount : Account
+    public class AuthenticationDatabaseContext<TAccount> : DbContext, IAccountDatabaseContext<TAccount> where TAccount : class, IAccount
     {
         public DbSet<TAccount> Accounts { get; set; }
         public DbSet<Credential<TAccount>> Credentials { get; set; }

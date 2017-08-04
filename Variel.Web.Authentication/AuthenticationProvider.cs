@@ -3,7 +3,7 @@ using Variel.Web.Common;
 
 namespace Variel.Web.Authentication
 {
-    public abstract class AuthenticationProvider<TAccount> where TAccount : Account
+    public abstract class AuthenticationProvider<TAccount> where TAccount : class, IAccount
     {
         protected AuthenticationDatabaseContext<TAccount> Database { get; }
 

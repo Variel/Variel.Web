@@ -4,7 +4,7 @@ using Variel.Web.Common;
 
 namespace Variel.Web.Authentication
 {
-    public class AuthenticationProviderFactory<TAccount> : IAuthenticationProviderFactory<TAccount> where TAccount : Account
+    public class AuthenticationProviderFactory<TAccount> : IAuthenticationProviderFactory<TAccount> where TAccount : class, IAccount
     {
         static readonly Dictionary<AuthenticationProviders, Type> Providers = new Dictionary<AuthenticationProviders, Type>
         {

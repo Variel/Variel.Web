@@ -7,7 +7,7 @@ using Variel.Web.Common;
 
 namespace Variel.Web.Authentication
 {
-    public class FacebookAuthenticationProvider<TAccount> : AuthenticationProvider<TAccount> where TAccount : Account
+    public class FacebookAuthenticationProvider<TAccount> : AuthenticationProvider<TAccount> where TAccount : class, IAccount
     {
         public FacebookAuthenticationProvider(AuthenticationDatabaseContext<TAccount> databaseContext)
             : base(databaseContext) { }

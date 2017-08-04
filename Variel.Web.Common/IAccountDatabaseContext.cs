@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Variel.Web.Common
 {
-    public interface IAccountDatabaseContext<TAccount> where TAccount : Account
+    public interface IAccountDatabaseContext<TAccount> where TAccount : class, IAccount
     {
         DbSet<TAccount> Accounts { get; }
 

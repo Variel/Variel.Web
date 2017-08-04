@@ -9,7 +9,7 @@ using Variel.Web.Helpers;
 
 namespace Variel.Web.Authentication
 {
-    public class Credential<TAccount> where TAccount : Account
+    public class Credential<TAccount> where TAccount : IAccount
     {
         [Key, Column(Order = 0)]
         public AuthenticationProviders Provider { get; set; }

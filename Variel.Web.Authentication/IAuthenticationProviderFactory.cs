@@ -2,7 +2,7 @@
 
 namespace Variel.Web.Authentication
 {
-    public interface IAuthenticationProviderFactory<TAccount> where TAccount : Account
+    public interface IAuthenticationProviderFactory<TAccount> where TAccount : class, IAccount
     {
         AuthenticationProvider<TAccount> Create(AuthenticationProviders provider);
     }

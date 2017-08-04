@@ -8,11 +8,11 @@ namespace Variel.Web.Authentication
 {
     public static class ServiceCollectionExtension
     {
-        public static IServiceCollection AddVarielAuthentication<TContext, TAccount>(this IServiceCollection services, TContext dbContext)
+        public static IServiceCollection AddVarielAuthentication<TContext, TAccount>(this IServiceCollection services)
             where TAccount : class, IAccount
             where TContext : AuthenticationDatabaseContext<TAccount>
         {
-            services.AddScoped<AuthenticationDatabaseContext<TAccount>>(_ => dbContext);
+            services.AddScoped<AuthenticationDatabaseContext<TAccount>>(provider => provider.GetService<TContext>());
             return services;
         }
     }

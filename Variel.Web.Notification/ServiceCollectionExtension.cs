@@ -9,8 +9,7 @@ namespace Variel.Web.Notification
 {
     public static class ServiceCollectionExtension
     {
-        public static IServiceCollection AddVarielSms<TContext>(this IServiceCollection services, TContext dbContext)
-            where TContext : class, ISettingsDatabaseContext
+        public static IServiceCollection AddVarielSms(this IServiceCollection services)
         {
             services.AddScoped<SmsService, SmsService>();
             return services;

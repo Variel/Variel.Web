@@ -7,7 +7,7 @@ namespace Variel.Web.Common
         public static IServiceCollection AddVarielAppSettings<TContext>(this IServiceCollection services, TContext dbContext)
             where TContext : class, ISettingsDatabaseContext
         {
-            services.AddScoped<ISettingsDatabaseContext, TContext>();
+            services.AddScoped<ISettingsDatabaseContext>(_ => dbContext);
             services.AddScoped<SettingsProvider, SettingsProvider>();
             return services;
         }

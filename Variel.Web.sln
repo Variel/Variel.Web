@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variel.Web.Authentication", "Variel.Web.Authentication\Variel.Web.Authentication.csproj", "{E282EA86-9F29-420B-848D-E698F71AF920}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variel.Web.Common", "Variel.Web.Common\Variel.Web.Common.csproj", "{26B612DD-79CC-4EFF-A376-99B3CF72D735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variel.Web.Helpers", "Variel.Web.Helpers\Variel.Web.Helpers.csproj", "{DEE458EC-EBCB-4DD0-A1C7-9AB0F6DE887E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variel.Web.Extensions", "Variel.Web.Extensions\Variel.Web.Extensions.csproj", "{E6690F57-E5B6-4897-A2A8-42A2A7279138}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variel.Web.Notification", "Variel.Web.Notification\Variel.Web.Notification.csproj", "{7A89DBC5-AFD6-4BAD-8384-311A3D6EE1E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{E282EA86-9F29-420B-848D-E698F71AF920}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E282EA86-9F29-420B-848D-E698F71AF920}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E282EA86-9F29-420B-848D-E698F71AF920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B612DD-79CC-4EFF-A376-99B3CF72D735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B612DD-79CC-4EFF-A376-99B3CF72D735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B612DD-79CC-4EFF-A376-99B3CF72D735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B612DD-79CC-4EFF-A376-99B3CF72D735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE458EC-EBCB-4DD0-A1C7-9AB0F6DE887E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE458EC-EBCB-4DD0-A1C7-9AB0F6DE887E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE458EC-EBCB-4DD0-A1C7-9AB0F6DE887E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE458EC-EBCB-4DD0-A1C7-9AB0F6DE887E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6690F57-E5B6-4897-A2A8-42A2A7279138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6690F57-E5B6-4897-A2A8-42A2A7279138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6690F57-E5B6-4897-A2A8-42A2A7279138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6690F57-E5B6-4897-A2A8-42A2A7279138}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A89DBC5-AFD6-4BAD-8384-311A3D6EE1E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A89DBC5-AFD6-4BAD-8384-311A3D6EE1E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A89DBC5-AFD6-4BAD-8384-311A3D6EE1E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A89DBC5-AFD6-4BAD-8384-311A3D6EE1E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

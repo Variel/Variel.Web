@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.3.1</Version>
+    <PackageTags>Variel Session Authentication Authorization Auth</PackageTags>
+    <Copyright>Copyright 2017 (c) Variel Creatives. All rights reserved.</Copyright>
+    <Description>Session Service for Variel Authentication Systems</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Variel.Web.Common\Variel.Web.Common.csproj" />
+    <ProjectReference Include="..\Variel.Web.Extensions\Variel.Web.Extensions.csproj" />
+  </ItemGroup>
+
+</Project>

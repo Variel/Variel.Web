@@ -13,6 +13,7 @@ namespace Variel.Web.Authentication
             where TContext : AuthenticationDatabaseContext<TAccount>
         {
             services.AddScoped<AuthenticationDatabaseContext<TAccount>>(provider => provider.GetService<TContext>());
+            services.AddScoped<IAuthenticationProviderFactory<TAccount>, AuthenticationProviderFactory<TAccount>>();
             return services;
         }
     }

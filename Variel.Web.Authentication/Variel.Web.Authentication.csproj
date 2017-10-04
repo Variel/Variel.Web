@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <PackageId>Variel.Web.Authentication</PackageId>
-    <PackageVersion>1.0.3.4</PackageVersion>
     <Authors>Variel Creatives</Authors>
     <Description>Web authentication pack for Variel Creatives</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -11,9 +10,12 @@
     <Copyright>Copyright 2017 (c) Variel Creatives. All rights reserved.</Copyright>
     <PackageTags>web variel authentication oauth</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.3.4</AssemblyVersion>
-    <FileVersion>1.0.3.4</FileVersion>
-    <Version>1.0.3.4</Version>
+    <AssemblyVersion>1.0.4</AssemblyVersion>
+    <FileVersion>1.0.4</FileVersion>
+    <Version>1.0.4</Version>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
   </PropertyGroup>
 
   <ItemGroup>

@@ -3,15 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <PackageId>Variel.Web.Notification</PackageId>
-    <PackageVersion>1.0.3.1</PackageVersion>
     <Authors>Variel Creatives</Authors>
     <Description>notification pack for Variel Creatives</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes></PackageReleaseNotes>
     <Copyright>Copyright 2017 (c) Variel Creatives. All rights reserved.</Copyright>
     <PackageTags>web variel sms notification</PackageTags>
-    <Version>1.0.3.1</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.4</AssemblyVersion>
+    <FileVersion>1.0.4</FileVersion>
+    <Version>1.0.4</Version>
+    <SignAssembly>True</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>

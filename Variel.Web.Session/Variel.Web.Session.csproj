@@ -1,12 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.3.1</Version>
-    <PackageTags>Variel Session Authentication Authorization Auth</PackageTags>
-    <Copyright>Copyright 2017 (c) Variel Creatives. All rights reserved.</Copyright>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <PackageId>Variel.Web.Session</PackageId>
+    <Authors>Variel Creatives</Authors>
     <Description>Session Service for Variel Authentication Systems</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Copyright>Copyright 2017 (c) Variel Creatives. All rights reserved.</Copyright>
+    <PackageTags>Variel Session Authentication Authorization Auth</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.4</AssemblyVersion>
+    <FileVersion>1.0.4</FileVersion>
+    <Version>1.0.4</Version>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>  
   </PropertyGroup>
 
   <ItemGroup>

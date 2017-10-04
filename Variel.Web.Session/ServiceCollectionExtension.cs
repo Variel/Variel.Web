@@ -14,6 +14,8 @@ namespace Variel.Web.Common
 
             if (configure != null)
                 services.AddSession(configure);
+            else
+                services.AddSession();
 
             services.AddScoped<SessionService<TAccount>, SessionService<TAccount>>();
 

@@ -3,15 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <PackageId>Variel.Web.Helpers</PackageId>
-    <PackageVersion>1.0.3</PackageVersion>
     <Authors>Variel Creatives</Authors>
     <Description>Web helper pack for Variel Creatives</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes></PackageReleaseNotes>
     <Copyright>Copyright 2017 (c) Variel Creatives. All rights reserved.</Copyright>
     <PackageTags>web variel cryptography crypto</PackageTags>
-    <Version>1.0.3</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.4</AssemblyVersion>
+    <FileVersion>1.0.4</FileVersion>
+    <Version>1.0.4</Version>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
   </PropertyGroup>
 
   <ItemGroup>

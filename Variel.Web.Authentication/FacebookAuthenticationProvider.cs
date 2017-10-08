@@ -16,7 +16,7 @@ namespace Variel.Web.Authentication
         {
             var credential = await Database.Credentials
                 .Include(c => c.Account)
-                .SingleOrDefaultAsync(c => c.Provider == AuthenticationProviders.Self && c.ProviderId == id);
+                .SingleOrDefaultAsync(c => c.Provider == AuthenticationProviders.Facebook && c.ProviderId == id);
 
             var fbData = await GetFacebookUserDataAsync(accessToken);
             var remoteId = fbData.Id;
@@ -29,7 +29,7 @@ namespace Variel.Web.Authentication
 
         public override async Task CreateAccountAsync(TAccount source, string id, string accessToken)
         {
-            var credential = await Database.Credentials.FindAsync(AuthenticationProviders.Self, id);
+            var credential = await Database.Credentials.FindAsync(AuthenticationProviders.Facebook, id);
             if (credential != null)
                 throw new CredentialConflictException("이미 존재 하는 계정 정보입니다");
 
@@ -61,7 +61,7 @@ namespace Variel.Web.Authentication
         private async Task<FacebookGetMeApiResponse> GetFacebookUserDataAsync(string accessToken)
         {
             const string graphApiHost = "graph.facebook.com";
-            const string graphApiVersion = "v2.5";
+            const string graphApiVersion = "v2.10";
 
             var client = new HttpClient();
             var rawData = await client.GetStringAsync($"https://{graphApiHost}/{graphApiVersion}/me?fields=id,name&access_token={accessToken}");

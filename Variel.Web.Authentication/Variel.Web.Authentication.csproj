@@ -6,13 +6,13 @@
     <Authors>Variel Creatives</Authors>
     <Description>Web authentication pack for Variel Creatives</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>카카오 계정 연동 추가</PackageReleaseNotes>
     <Copyright>Copyright 2017 (c) Variel Creatives. All rights reserved.</Copyright>
     <PackageTags>web variel authentication oauth</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.4</AssemblyVersion>
-    <FileVersion>1.0.4</FileVersion>
-    <Version>1.0.4</Version>
+    <AssemblyVersion>1.0.5.1</AssemblyVersion>
+    <FileVersion>1.0.5</FileVersion>
+    <Version>1.0.5.1</Version>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
     <DelaySign>False</DelaySign>

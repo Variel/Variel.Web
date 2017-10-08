@@ -9,7 +9,8 @@ namespace Variel.Web.Authentication
         static readonly Dictionary<AuthenticationProviders, Type> Providers = new Dictionary<AuthenticationProviders, Type>
         {
             [AuthenticationProviders.Self] = typeof(SelfAuthenticationProvider<TAccount>),
-            [AuthenticationProviders.Facebook] = typeof(FacebookAuthenticationProvider<TAccount>)
+            [AuthenticationProviders.Facebook] = typeof(FacebookAuthenticationProvider<TAccount>),
+            [AuthenticationProviders.Kakao] = typeof(KakaoAuthenticationProvider<TAccount>)
         };
 
         

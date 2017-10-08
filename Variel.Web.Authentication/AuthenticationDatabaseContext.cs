@@ -10,6 +10,10 @@ namespace Variel.Web.Authentication
 {
     public class AuthenticationDatabaseContext<TAccount> : DbContext, IAccountDatabaseContext<TAccount> where TAccount : class, IAccount
     {
+        public AuthenticationDatabaseContext() { }
+        public AuthenticationDatabaseContext(DbContextOptions options) : base(options) {}
+
+
         public DbSet<TAccount> Accounts { get; set; }
         public DbSet<Credential<TAccount>> Credentials { get; set; }
     }

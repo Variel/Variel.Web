@@ -10,9 +10,9 @@
     <Copyright>Copyright 2017 (c) Variel Creatives. All rights reserved.</Copyright>
     <PackageTags>web variel authentication oauth</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.5.1</AssemblyVersion>
-    <FileVersion>1.0.5</FileVersion>
-    <Version>1.0.5.1</Version>
+    <AssemblyVersion>1.0.5.2</AssemblyVersion>
+    <FileVersion>1.0.5.2</FileVersion>
+    <Version>1.0.5.2</Version>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
     <DelaySign>False</DelaySign>

@@ -1,25 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Variel.Web.Authentication</PackageId>
     <Authors>Variel Creatives</Authors>
     <Description>Web authentication pack for Variel Creatives</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>카카오 계정 연동 추가</PackageReleaseNotes>
-    <Copyright>Copyright 2017 (c) Variel Creatives. All rights reserved.</Copyright>
+    <PackageReleaseNotes>Add model configuration data</PackageReleaseNotes>
+    <Copyright>Copyright 2019 (c) Variel Creatives. All rights reserved.</Copyright>
     <PackageTags>web variel authentication oauth</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.5.2</AssemblyVersion>
-    <FileVersion>1.0.5.2</FileVersion>
-    <Version>1.0.5.2</Version>
-    <SignAssembly>True</SignAssembly>
+    <AssemblyVersion>2.1.0</AssemblyVersion>
+    <FileVersion>2.1.0</FileVersion>
+    <Version>2.1.0</Version>
+    <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
-    <DelaySign>False</DelaySign>
+    <DelaySign>false</DelaySign>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CSharp" Version="4.3.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.4.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 

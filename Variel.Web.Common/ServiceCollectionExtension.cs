@@ -14,7 +14,7 @@ namespace Variel.Web.Common
         }
 
         public static IServiceCollection AddVarielAccount<TContext, TAccount>(this IServiceCollection services)
-            where TContext : class, ISettingsDatabaseContext, IAccountDatabaseContext<TAccount>
+            where TContext : class, IAccountDatabaseContext<TAccount>
             where TAccount : class, IAccount
         {
             services.AddScoped<IAccountDatabaseContext<TAccount>>(provider => provider.GetService<TContext>());

@@ -16,5 +16,13 @@ namespace Variel.Web.Authentication
 
         public DbSet<TAccount> Accounts { get; set; }
         public DbSet<Credential<TAccount>> Credentials { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Credential<TAccount>>()
+                .HasKey(c => new {c.Provider, c.ProviderId});
+
+            base.OnModelCreating(builder);
+        }
     }
 }
